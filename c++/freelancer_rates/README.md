@@ -12,46 +12,46 @@ We first establish a few rules between the freelancer and the project manager:
 
 -Discounts are modeled as fractional numbers representing percentages, for example, 25.0 (25%).
 
-1. Calculate the daily rate given an hourly rate
+**1. Calculate the daily rate given an hourly rate**
 
 Implement a function called daily_rate to calculate the daily rate given an hourly rate as a parameter. The contract defines that a day has 8 billable hours.
 
-v---CODE---v
+v------------------------------v<br>
 daily_rate(60)<br>
-// => 480.0
-^---CODE---^
+// => 480.0<br>
+^------------------------------^
 
 The returned daily rate should be of type double.
 
-2. Calculate a discounted price
+**2. Calculate a discounted price**
 
 Implement a function apply_discount to calculate the price after a discount. It should accept two parameters: the original price and the discount rate in percent.
 
-v---CODE---v
+v------------------------------v<br>
 apply_discount(150, 10)<br>
-// => 135.0
-^---CODE---^
+// => 135.0<br>
+^------------------------------^
 
 The returned value should always be of type double, not rounded in any way.
 
-3. Calculate the monthly rate, given an hourly rate and a discount
+**3. Calculate the monthly rate, given an hourly rate and a discount**
    
 Implement a monthly_rate function to calculate the discounted monthly rate. It should have two parameters, an hourly rate and the discount in percent.
 
-v---CODE---v
+v------------------------------v<br>
 monthly_rate(77, 10.5)<br>
-// => 12130
-^---CODE---^
+// => 12130<br>
+^------------------------------^
 
 The returned monthly rate should be rounded up (take the ceiling) to the nearest integer.
 
-4. Calculate the number of complete workdays given a budget, hourly rate, and discount
+**4. Calculate the number of complete workdays given a budget, hourly rate, and discount**
    
 Implement a function days_in_budget that takes a budget, an hourly rate, and a discount, and calculates how many complete days of work that covers.
 
-v---CODE---v
+v------------------------------v<br>
 days_in_budget(20'000, 80, 11.0)<br>
-// => 35
-^---CODE---^
+// => 35<br>
+^------------------------------^
 
 The returned number of days should be rounded down (take the floor) to the next integer.
