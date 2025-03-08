@@ -13,7 +13,7 @@ We first establish a few rules between the freelancer and the project manager:
 -Discounts are modeled as fractional numbers representing percentages, for example, 25.0 (25%).
 
 1. Calculate the daily rate given an hourly rate
-----------
+------------------------------
 Implement a function called daily_rate to calculate the daily rate given an hourly rate as a parameter. The contract defines that a day has 8 billable hours.
 
 ------------------------------
