@@ -1,10 +1,11 @@
-#if !defined(RAINDROPS_H)
-#define RAINDROPS_H
-// Include string header to use std::string
-#include <string>
-namespace raindrops {
-    // define function for use in raindrops.cpp
-    std::string convert(int a);
-}  // namespace raindrops
+#pragma once
 
-#endif // RAINDROPS_H
+#include <string>
+
+namespace vehicle_purchase {
+
+	bool needs_license(std::string kind);
+	std::string choose_vehicle(std::string option1, std::string option2);
+	double calculate_resell_price(double original_price, double age);
+
+}  // namespace vehicle_purchase
