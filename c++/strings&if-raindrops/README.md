@@ -1,30 +1,20 @@
-**Instructions:**<br>
-- In this exercise, you'll be processing lines from a logged report. Each log line is a string formatted as follows: "[<LEVEL>]: <MESSAGE>".
-- There are three different log levels:
+**Introduction:**
+- Raindrops is a slightly more complex version of the FizzBuzz challenge, a classic interview question.
 
-1. INFO
-2. WARNING
-3. ERROR
+**Instructions:**
+- Your task is to convert a number into its corresponding raindrop sounds.
 
-- You have three tasks, each of which will take a log line and ask you to do something with it.
+- If a given number:
 
-**1. Get the message from a log line**
-- Implement the log_line::message method to return a log line's message:
+is divisible by 3, add "Pling" to the result.<br>
+is divisible by 5, add "Plang" to the result.<br>
+is divisible by 7, add "Plong" to the result.<br>
+is not divisible by 3, 5, or 7, the result should be the number as a string.
 
-**ex:**<br>
-log_line::message("[ERROR]: Invalid operation")<br>
-// => "Invalid operation"
+**Examples:**<br>
+28 is divisible by 7, but not 3 or 5, so the result would be "Plong".<br>
+30 is divisible by 3 and 5, but not 7, so the result would be "PlingPlang".<br>
+34 is not divisible by 3, 5, or 7, so the result would be "34".
 
-**2. Get the log level from a log line**
-- Implement the log_line::log_level method to return a log line's log level, which should be returned in uppercase:
-
-**ex:**<br>
-log_line::log_level("[ERROR]: Invalid operation")<br>
-// => "ERROR"
-
-**3. Reformat a log line**
-- Implement the log_line::reformat method that reformats the log line, putting the message first and the log level after it in parentheses:
-
-**ex:**<br>
-log_line::reformat("[INFO]: Operation completed")<br>
-// => "Operation completed (INFO)"
+**Note:**<br>
+A common way to test if one number is evenly divisible by another is to compare the remainder or modulus to zero. Most languages provide operators or functions for one (or both) of these.
