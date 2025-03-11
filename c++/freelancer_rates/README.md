@@ -1,12 +1,9 @@
 **Instructions**
 
-In this exercise, you'll be writing code to help a freelancer communicate with a project manager. Your task is to provide a few utilities to quickly calculate daily and monthly rates, optionally with a given discount.
-
-We first establish a few rules between the freelancer and the project manager:
-
--The daily rate is 8 times the hourly rate.
-
--A month has 22 billable days.
+- In this exercise, you'll be writing code to help a freelancer communicate with a project manager. Your task is to provide a few utilities to quickly calculate daily and monthly rates, optionally with a given discount.
+- We first establish a few rules between the freelancer and the project manager:
+- The daily rate is 8 times the hourly rate.
+- A month has 22 billable days.
 
 -Sometimes, the freelancer is offering to apply a discount on their daily rate (for example for their most loyal customers or not-for-profit customers).
 
