@@ -1,2 +1,2 @@
 # excercism
- An overview of the exercism assignments I have completed in various coding languages
+ Automated backups of solutions completed on exercism.org
